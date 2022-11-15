@@ -27,5 +27,21 @@ base = {
     "loss_limit": {"amount": 1000, "period": "week"},
 }
 
-print(base.values())
-print(base.keys())
+v = base.get("login"), base.get("avatar"), base.get("gdpr_data"), base.get("loss_limit").get("amount")
+list_v1 = list(v)
+
+print(list_v1)
+
+v3 = {"login": "Test_login",
+       "avatar": "banana",
+       "email": "WERTYrU@ASDFffqaffrfff",
+       "phone": 380529876025,
+       "gdpr_data": True,
+       "loss_limit_amount": 1000}
+v4 = dict(v3)
+
+print(v4)
+
+# for key, value in v3.items():
+#       print(key, ':', value)
+
